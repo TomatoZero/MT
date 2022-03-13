@@ -48,9 +48,8 @@
 
         </StackPanel>
 
-        <DataGrid Grid.Row="1" Grid.ColumnSpan="2"  ColumnWidth="28" ItemsSource="{Binding DataTableCollection}"
+        <DataGrid Grid.Row="1" Grid.ColumnSpan="2"  ColumnWidth="34" ItemsSource="{Binding DataTableCollection}" TextBlock.TextAlignment="Center"
                       CanUserAddRows="False" CanUserDeleteRows="False" IsReadOnly="True" CanUserReorderColumns="False" CanUserResizeColumns="False" CanUserResizeRows="False" CanUserSortColumns="False"/>
-
 
         <Grid x:Name="writeWord" Grid.Row="2" Grid.Column="0" Margin="0,5,0,0" Grid.ColumnSpan="2">
             <Grid.ColumnDefinitions>
@@ -85,8 +84,8 @@
                 <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
 
-            <DataGrid Grid.Row="0" Grid.Column="0" Height="67" Margin="5,0" x:Name="partT"
-                    ColumnWidth="28" RowHeaderWidth="0" ItemsSource="{Binding DataTablePart}"
+            <DataGrid Grid.Row="0" Grid.Column="0" Height="64" Width="842" Margin="5,0" x:Name="partT" 
+                    ColumnWidth="28" RowHeaderWidth="0" ItemsSource="{Binding DataTablePart}" TextBlock.TextAlignment="Center"
                       CanUserAddRows="False" CanUserDeleteRows="False" IsReadOnly="True"
                       CanUserReorderColumns="False" CanUserResizeColumns="False" CanUserResizeRows="False"
                       CanUserSortColumns="False">
